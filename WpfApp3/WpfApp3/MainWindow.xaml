@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Image Source="/pexels-jakubzerdzicki-29134191.jpg" Stretch="Fill"/>
+        <TextBox x:Name="TaskInput" Width="200" Height="25" Margin="10" VerticalAlignment="Top" />
+        <Button Content="Add Task" Width="75" Height="25" Margin="220,10,10,0" VerticalAlignment="Top" Click="AddTask_Click"/>
+        <ListBox x:Name="TaskList" Margin="300,40,258,194" Height="200">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox x:Name="TaskCheckBox" Checked="TaskCheckBox_Checked" Unchecked="TaskCheckBox_Unchecked"/>
+                        <TextBlock Text="{Binding}" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                        <Button Content="Delete" Width="60" Margin="5,0,0,0" Visibility="Collapsed" 
+                                Click="DeleteButton_Click"/>
+                        <Button Content="Edit" Width="60" Margin="5,0,0,0" Visibility="Collapsed" 
+                                Click="EditButton_Click"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+    </Grid>
+</Window>
