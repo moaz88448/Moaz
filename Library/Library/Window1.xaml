@@ -1,0 +1,31 @@
+﻿<Window x:Class="Library.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Button Content="add" HorizontalAlignment="Left" Margin="416,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.342,1.206" Click="Button_Click"/>
+        <Button Content="update" HorizontalAlignment="Left" Margin="480,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.342,1.206" Click="Button_Click_1"/>
+        <Button Content="delete" HorizontalAlignment="Left" Margin="573,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.342,1.206" Click="Button_Click_2"/>
+        <TextBox HorizontalAlignment="Left" Margin="400,129,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Name="authore"/>
+        <TextBox HorizontalAlignment="Left" Margin="573,129,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Name="title"/>
+        <TextBox HorizontalAlignment="Left" Margin="573,184,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Name="ISBN"/>
+        <TextBox HorizontalAlignment="Left" Margin="400,184,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Name="subject"/>
+        <TextBox HorizontalAlignment="Left" Margin="480,78,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Name="Id"/>
+        <DataGrid Margin="0,41,490,94" Name="list" SelectionChanged="list_SelectionChanged"/>
+        <Label Content="Id" HorizontalAlignment="Left" Margin="440,78,0,0" VerticalAlignment="Top"/>
+        <Label Content="authore" HorizontalAlignment="Left" Margin="325,125,0,0" VerticalAlignment="Top"/>
+        <Label Content="titel" HorizontalAlignment="Left" Margin="540,125,0,0" VerticalAlignment="Top"/>
+        <Label Content="subject" HorizontalAlignment="Left" Margin="329,180,0,0" VerticalAlignment="Top"/>
+        <Label Content="ISBN" HorizontalAlignment="Left" Margin="540,178,0,0" VerticalAlignment="Top"/>
+        <Button Content="back" HorizontalAlignment="Left" Margin="697,325,0,0" VerticalAlignment="Top" Click="Button_Click_3"/>
+        <Button Content="Load" HorizontalAlignment="Left" Margin="428,325,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.342,1.206" Click="Load_click"/>
+
+
+
+
+    </Grid>
+</Window>

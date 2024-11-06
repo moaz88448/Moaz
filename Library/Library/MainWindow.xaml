@@ -1,0 +1,14 @@
+﻿<Window x:Class="Library.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="manage profils" HorizontalAlignment="Left" Margin="455,166,0,0" VerticalAlignment="Top" Height="93" Width="148" Click="Button_Click_2"/>
+        <Button Content="manage books" HorizontalAlignment="Left" Margin="185,166,0,0" VerticalAlignment="Top" Height="93" Width="149" Click="Button_Click"/>
+
+    </Grid>
+</Window>

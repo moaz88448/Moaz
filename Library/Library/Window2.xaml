@@ -1,0 +1,24 @@
+﻿<Window x:Class="Library.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Margin="482,63,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Name="name"/>
+        <TextBox HorizontalAlignment="Left" Margin="376,125,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Name="age"/>
+        <TextBox HorizontalAlignment="Left" Margin="592,125,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Name="phonenum"/>
+        <Button Content="add" HorizontalAlignment="Left" Margin="530,179,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.471,1.189" Click="Button_Click"/>
+        <Label Content="name" HorizontalAlignment="Left" Margin="416,63,0,0" VerticalAlignment="Top"/>
+        <Label Content="age" HorizontalAlignment="Left" Margin="314,121,0,0" VerticalAlignment="Top"/>
+        <Label Content="phonenum" HorizontalAlignment="Left" Margin="519,121,0,0" VerticalAlignment="Top"/>
+
+
+
+
+
+
+    </Grid>
+</Window>
