@@ -1,0 +1,53 @@
+create database edit_cars
+use edit_cars
+
+
+
+create table glasses
+(
+glass_id int primary key identity (1,1),
+glass_location nvarchar (50),
+glass_design nvarchar (50),
+
+)
+create table chairs
+(
+chaire_id int primary key identity (1,1),
+chair_location nvarchar (50),
+chare_design nvarchar (50),
+
+)
+
+create table colours 
+(
+coulour_id int primary key identity (1,1),
+coulour_name nvarchar (50),
+
+)
+insert into colours values('red'),
+('blue'),
+('black'),
+('white'),
+('yellwo'),
+('green'),
+('brown'),
+('gold'),
+('silver')
+
+
+create table useres 
+(
+user_id int primary key identity (1,1),
+user_name nvarchar (50),
+user_card nvarchar (50),
+
+)
+
+create table cars 
+(
+car_name nvarchar (50),
+car_model nvarchar (50),
+car_brand nvarchar (50),
+
+
+)
